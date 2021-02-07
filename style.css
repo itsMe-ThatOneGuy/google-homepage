@@ -12,6 +12,14 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+a:link,
+a:visited {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
 .main {
     display: flex;
     flex-direction: column;
@@ -30,6 +38,15 @@ body {
 
 .form-container {
     margin: auto;
+}
+
+form input:focus {
+    outline: none;
+}
+
+input:hover {
+    box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+    border-color: rgba(223, 225, 229, 0);
 }
 
 input {
@@ -54,6 +71,13 @@ button {
     color: #3c4043;
 }
 
+button:hover {
+    box-shadow: 0 1px 1px rgba(0,0,0,.1);
+    background-color: #f8f9fa;
+    border: 1px solid #dadce0;
+    color: #202124;
+}
+
 .search-btn-container {
     text-align: center;
 }
@@ -64,6 +88,10 @@ button {
     margin-left: 18px;
     margin-right: 10px;
     color: #000;
+}
+
+.nav-list a {
+    color: rgb(0,0,0);
 }
 
 ul{
@@ -96,4 +124,34 @@ footer {
     left: 0;
     position: absolute;
     right: 0;
+    font-size: 14px;
+    margin-left: -27px;
+    white-space: nowrap;
+}
+
+footer a {
+    color: #70757a;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    line-height: 40px;
+}
+
+.footer-list li {
+    display: inline-block;
+    padding-left: 27px;
+}
+
+.footer-right {
+    margin-right: 30px;
+    min-width: 30%;
+    text-align: right;
+}
+
+.footer-left {
+    margin-left: 30px;
+    min-width: 30%;
+    text-align: left;
 }
